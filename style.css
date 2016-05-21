@@ -1,0 +1,14 @@
+body {
+  min-width: 1024px;
+  min-height: 768px;
+  height: 100%;
+}
+
+#map-canvas {
+  height: 100%;
+  width: 100%;
+  background: url(map.svg);
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}

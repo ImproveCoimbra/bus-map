@@ -5,8 +5,9 @@
     <title>Coimbra - Bus Map</title>
 
     <script type="text/javascript" src="paperjs-v0.9.25/dist/paper-full.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 
-    <script type="text/paperscript" canvas="myCanvas">
+    <script type="text/paperscript" canvas="map-canvas">
       var path;
 
       function onMouseDown(event) {
@@ -36,22 +37,11 @@
         // When the mouse is released, simplify it:
         path.simplify(10);
       }
-
     </script>
-
-    <style type="text/css" media="screen">
-      canvas {
-        background: url(map.svg);
-        background-size:     cover;
-        background-repeat:   no-repeat;
-        background-position: center center;
-      }
-   </style>
-
   </head>
 
-  <body style="min-width: 1024px; min-height: 768px; height: 100%;">
-    <canvas id="myCanvas" style="height: 100%; width: 100%;"></canvas>
+  <body>
+    <canvas id="map-canvas"></canvas>
 
     <button type="button" name="button" id="reset"> Clear Drawing </button>
 
@@ -59,7 +49,7 @@
       paper.install(window);
 
       window.onload = function () {
-        paper.setup('myCanvas');
+        paper.setup('map-canvas');
 
          document.getElementById('reset').onclick = function(){
             paper.project.activeLayer.removeChildren();
