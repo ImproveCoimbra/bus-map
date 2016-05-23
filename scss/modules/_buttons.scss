@@ -1,0 +1,48 @@
+.btn {
+  border-width: 0;
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-color: $beige;
+  background-color: transparent;
+  @include padding(10px 30px 10px 30px);
+  color: $beige;
+  font-weight: $bold;
+  text-decoration: none;
+  @include transition-duration(.2s);
+  cursor: pointer;
+  outline:none;
+
+  &:hover {
+    border-color: $dark-gray;
+    color: $dark-gray;
+    text-decoration: none;
+  }
+
+  &-round {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 56px;
+    height: 56px;
+    background-color: $green;
+    border-radius: 999em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    display: inline-block;
+    @include transition-duration(.2s);
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+
+    img {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      height: 30px;
+      width: auto;
+      // text-align: center;
+      margin-top: -15px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url("../fonts/Lato/Lato-Hairline.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url("../fonts/Lato/Lato-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url("../fonts/Lato/Lato-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url("../fonts/Lato/Lato-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url("../fonts/Lato/Lato-Black.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url("../fonts/Lato/Lato-HairlineItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url("../fonts/Lato/Lato-LightItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url("../fonts/Lato/Lato-Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url("../fonts/Lato/Lato-BoldItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url("../fonts/Lato/Lato-BlackItalic.ttf") format('truetype');
+}
+
+$ultra-light: 100;
+$light: 300;
+$regular: 400;
+$bold: 700;
+$ultra-bold: 900;
+
+$base-font-family: 'Lato', sans-serif;
+$base-font-style: normal;
+$base-font-weight: $light;
+$base-font-size: 100%;
+$base-font-spacing: 0.5px;
+$base-font-color: $font-dark-color;
+
+h1 {
+  margin-bottom: 24px;
+  font-size: em(36px);
+  line-height: em(18px);
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: em(30px);
+  line-height: em(18px);
+  font-weight: $light;
+}
+
+p {
+  font-size: em(22px);
+  line-height: em(26px);
+}
+
+a {
+  font-size: em(22px);
+  color: $link-color;
+  text-decoration: none;
+  @include transition-duration(.2s);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

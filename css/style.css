@@ -7,7 +7,7 @@ body {
 #map-canvas {
   height: 100%;
   width: 100%;
-  background: url(map.svg);
+  background: url(../img/map.svg);
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center center;
