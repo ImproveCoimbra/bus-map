@@ -1,0 +1,11 @@
+.map {
+  #map-canvas {
+    @include margin(null auto null auto);
+    width: 1000px;
+    height: 855px;
+    background-image: url("../img/map.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

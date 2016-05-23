@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  outline: 0 !important; }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Lato Hairline"), local("Lato-Hairline"), url("../fonts/Lato/Lato-Hairline.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato/Lato-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato/Lato-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Lato Black"), local("Lato-Black"), url("../fonts/Lato/Lato-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local("Lato Hairline Italic"), local("Lato-HairlineItalic"), url("../fonts/Lato/Lato-HairlineItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url("../fonts/Lato/Lato-LightItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"), url("../fonts/Lato/Lato-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url("../fonts/Lato/Lato-BoldItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local("Lato Black Italic"), local("Lato-BlackItalic"), url("../fonts/Lato/Lato-BlackItalic.ttf") format("truetype"); }
+h1 {
+  margin-bottom: 24px;
+  font-size: 2.25em;
+  line-height: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.875em;
+  line-height: 1.125em;
+  font-weight: 300; }
+
+p {
+  font-size: 1.375em;
+  line-height: 1.625em; }
+
+a {
+  font-size: 1.375em;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+  a:hover {
+    text-decoration: underline; }
+
+.btn {
+  border-width: 0;
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-color: #fefeea;
+  background-color: transparent;
+  padding: 10px 30px;
+  color: #fefeea;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  outline: none; }
+  .btn:hover {
+    border-color: #333;
+    color: #333;
+    text-decoration: none; }
+  .btn-round {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 56px;
+    height: 56px;
+    background-color: #009688;
+    border-radius: 999em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    display: inline-block;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    cursor: pointer; }
+    .btn-round:hover {
+      background-color: #00635a; }
+    .btn-round img {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      height: 30px;
+      width: auto;
+      margin-top: -15px; }
+
+.row {
+  position: relative;
+  display: table;
+  width: 100%; }
+  .row .col-20 {
+    display: table-cell;
+    vertical-align: top;
+    width: 15%; }
+  .row .col-80 {
+    display: table-cell;
+    vertical-align: top;
+    width: 85%;
+    padding: 50px; }
+
+body {
+  background-color: #fefeea;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #111; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 80%; } }
+  @media (min-width: 769px) {
+    body {
+      font-size: 80%; } }
+  @media (min-width: 992px) {
+    body {
+      font-size: 90%; } }
+  @media (min-width: 1200px) {
+    body {
+      font-size: 100%; } }
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  background-color: #feecca;
+  padding-top: 50px;
+  text-align: center; }
+  .sidebar .logo {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    height: auto; }
+  .sidebar .subtitles {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    height: auto; }
+  .sidebar .reset-map {
+    margin-bottom: 25px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px; }
+
+.map #map-canvas {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+  height: 855px;
+  background-image: url("../img/map.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+/*# sourceMappingURL=screen.css.map */

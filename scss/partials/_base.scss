@@ -1,0 +1,25 @@
+body {
+  background-color: $beige;
+  // @include padding(50px null 50px null);
+  font-family: $base-font-family;
+  font-style: $base-font-style;
+  font-weight: $base-font-weight;
+  letter-spacing: $base-font-spacing;
+  color: $base-font-color;
+
+  @include respond-to('screen-xs') {
+    font-size: 80%;
+  }
+
+  @include respond-to('screen-sm') {
+    font-size: 80%;
+  }
+
+  @include respond-to('screen-md') {
+    font-size: 90%;
+  }
+
+  @include respond-to('screen-lg') {
+    font-size: $base-font-size;
+  }
+}

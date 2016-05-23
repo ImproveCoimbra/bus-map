@@ -1,0 +1,26 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  background-color: $beige-darken;
+  padding-top: 50px;
+  text-align: center;
+
+  .logo {
+    @include margin(null auto null auto);
+    width: 100px;
+    height: auto;
+  }
+
+  .subtitles {
+    @include margin(50px auto null auto);
+    width: 100px;
+    height: auto;
+  }
+
+  .reset-map {
+    margin-bottom: 25px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+  }
+}
